@@ -26,4 +26,31 @@ document.addEventListener('DOMContentLoaded', function () {
             link.rel = 'noopener noreferrer';
         }
     });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 400,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+
+burger = document.querySelector('.burger');
+const navItems = document.querySelector('.nav-items');
+const logo = document.querySelector('.logoIMG');
+
+burger.addEventListener('click', () => {
+    navItems.classList.toggle('active');
+    burger.classList.toggle('toggle');
+    logo.classList.toggle('hidden'); // Hide or show the logo
 });

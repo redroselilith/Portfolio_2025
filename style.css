@@ -1,23 +1,24 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     background: linear-gradient(to bottom right, #e0f2f7, #fce4ec);
     color: #242424;
     overflow-x: hidden;
+    font-size: 14px;
 }
 
 .container {
-    width: 90%;
+    width: 70%;
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 50px auto;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.container-content {
+    padding: 20px;
 }
 
 h1,
@@ -52,7 +53,6 @@ ul li #introMe {
 
 header {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -65,6 +65,7 @@ header {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    font-size: 15px;
 }
 
 .logo {
@@ -74,7 +75,7 @@ header {
 }
 
 .logo img {
-    width: 200px;
+    width: 150px;
     margin: 0;
 }
 
@@ -110,7 +111,7 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: #37474f;
+    color: #2d3437;
     transition: color 0.2s;
 }
 
@@ -119,19 +120,18 @@ header {
 }
 
 .intro {
-    background-image: url(images/introBGImg.png);
+    background-image: url(images/introBGImgSMALLEST.png);
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
-    max-width: 1200px;
-    height: 42vh;
-    border-radius: 10px;
+    height: 50vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .section {
     padding: 20px 0;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 100px;
 }
 
 .columns {
@@ -154,6 +154,13 @@ header {
     transform: translateY(-5px);
 }
 
+.column img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -161,22 +168,21 @@ img {
     margin-bottom: 10px;
 }
 
-
 #introMe {
     display: flex;
 }
 
 #aboutMe {
     max-width: 50%;
-    padding: 20px;
+    padding: 30px;
 }
 
 .me {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 50px;
-    position: relative;
+    padding-top: 20px;
+    padding-right: 20px;
     overflow: hidden;
     display: inline-block;
 }
@@ -213,17 +219,33 @@ img {
 
 #proj {
     padding-bottom: 0;
+    font-size: 13px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    margin-top: 80px;
 }
 
 /* responsividade para mobile ainda em andamento! */
 @media (max-width: 768px) {
-
 
     body {
         width: 100%;
         min-width: 100%;
     }
 
+    header {
+        padding: 7px;
+        margin-bottom: 0;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
 
     * {
         box-sizing: border-box;
@@ -241,7 +263,20 @@ img {
 
 
     .intro {
-        height: 10vh;
+        background-image: url(images/introBGImgSMALLEST.png);
+        background-size: cover;
+        height: 15vh;
+    }
+
+    #introMe {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #aboutMe {
+        max-width: 100%;
+        padding: 0;
     }
 
     .burger {
@@ -263,10 +298,12 @@ img {
     }
 
     .logo {
-        margin: 10px 0;
-        text-align: center;
-        order: 2;
-        width: 100%;
+        display: none;
+    }
+
+    .logo.hidden {
+        opacity: 0;
+        pointer-events: none;
     }
 
     .logo img {
@@ -275,15 +312,18 @@ img {
     }
 
     .nav-items {
-        display: none;
         flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
         width: 100%;
         align-items: center;
         justify-content: center;
+        transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
     }
 
     .nav-items.active {
-        display: flex;
+        max-height: 500px;
+        opacity: 1;
     }
 
     .nav-links {
@@ -327,4 +367,20 @@ img {
     .burger.toggle .line3 {
         transform: rotate(-45deg) translate(5px, -5px);
     }
+
+    #socialMedia {
+        flex-wrap: wrap;
+    }
+
+    .columns {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    .column {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
 }

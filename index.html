@@ -19,6 +19,11 @@
 
     <header>
         <nav class="navbar">
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
             <div class="nav-items">
                 <ul class="nav-links left">
                     <li><a href="#home">Home</a></li>
@@ -27,7 +32,7 @@
                 </ul>
             </div>
             <div class="logo">
-                <img src="images/logo.png" alt="">
+                <img src="images/logo.png" alt="" class="logoIMG">
             </div>
             <div class="nav-items">
                 <ul class="nav-links right">
@@ -36,176 +41,206 @@
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </div>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </nav>
     </header>
 
     <div class="container">
         <div class="intro">
         </div>
-        <section class="section" id="introMe">
-            <div class="me">
-                <img src="images/Lily1.png" alt="Lily Borges">
-            </div>
-            <div class="section" id="aboutMe">
+        <div class="container-content">
+            <section class="section" id="introMe">
+                <div class="me">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="images/Lily1.png">
+                        <source media="(min-width: 1200px)" srcset="images/Lily1.png">
+                        <source media="(min-width: 769px) and (max-width: 1999px)" srcset="images/Lily2.png">
+                        <img src="images/Lily1.png" alt="Lily Borges">
+                    </picture>
+                </div>
+                <div class="section" id="aboutMe">
 
-                <h2>Introdução</h2>
-                <p>Prazer, meu nome é Elissa Borges, mas me chame de Lily. Tenho 22 anos e estou no 4º período de
-                    <b>Ciência
-                        da
-                        Computação</b> na Universidade Vila Velha. Sou apaixonada em adquirir novos conhecimentos e em
-                    coletar experiências, seja na minha área profissional ou na vida. Tenho vários hobbies, e se
-                    dependesse de mim, eu faria de tudo.
-                </p>
-                <a href="#about" class="btn">Me conheça melhor</a>
-            </div>
-        </section>
+                    <h2>Introdução</h2>
+                    <p>Prazer, meu nome é Elissa Borges, mas me chame de Lily. Tenho 22 anos e estou no 4º período de
+                        <b>Ciência
+                            da
+                            Computação</b> na Universidade Vila Velha. Sou apaixonada em adquirir novos conhecimentos e
+                        em
+                        coletar experiências, seja na minha área profissional ou na vida. Tenho vários hobbies, e se
+                        dependesse de mim, eu faria de tudo.
+                    </p>
+                    <a href="#about" class="btn">Me conheça melhor</a>
+                </div>
+            </section>
 
-        <section class="section" id="about">
-            <h2>Sobre Mim</h2>
-            <p>Desde criança, sempre fui muito curiosa e sempre gostei de aprender coisas novas. De idiomas à
-                programação, eu queria aprender tudo. Sou autodidata, aprendi <b>inglês</b> sozinha, <i>sem ter feito
-                    nenhum
-                    curso,</i> e estudei cinco outras línguas: coreano, espanhol, francês, italiano e holandês. Me
-                apaixonei
-                pelo coreano e deixei os outros de lado para focar no que eu mais gostei, mas espero chegar a fluência
-                em todos um dia.</p>
-            <p>Entre os dez e os doze anos, aprendi a mexer no <b>Photoshop</b> e me apaixonei por design. Durante a
-                adolescência, trabalhei como <b>designer freelancer,</b> além de projetos voluntários em comunidades na
-                internet.</p>
-            <p>Aos doze, descobri o <b>HTML</b> e <b>CSS</b>, e foi amor a primeira vista. Foi no momento em que eu
-                escrevi minha primeira linha de código e vi uma tela se formar que eu decidi que queria me aprofundar na
-                área de programação.</p>
-            <p>Ao longo dos anos, meus objetivos foram mudando. Dos meus primeiros sonhos de ser cantora e atriz, a
-                escritora, a
-                hacker <i>(obrigada, Felicity Smoak)</i>, a desenvolvedora Front-End, e a <b>desenvolvedora de
-                    games</b>. Agora
-                tenho sonhos grandes de criar minha própria empresa de <b>jogos de simulação</b> algum dia, e hoje busco
-                construir uma fundação sólida para o início da minha carreira, para que um dia eu possa realizar o meu
-                sonho.</p>
-            <p>Como disse antes, eu faria de tudo se pudesse (e eu tento, rs). No meu <strike>raro</strike> tempo livre,
-                gosto de jogar,
-                mas também escrevo livros (dos quais um único foi <a
-                    href="https://www.amazon.com.br/Ha%C3%ADresis-Portuguese-Lissa-Brunelli-ebook/dp/B07JWBH1BH">publicado.</a>
-                Não é o melhor, mas tenho orgulho da conquista de publicar um livro aos 16 anos) ou
-                músicas (também
-                tenho um <a href="https://open.spotify.com/album/7qjUiK97LaKJoUIY7wnVjG?si=gJc24l_yTmKdAmYQ_7pQcw">EP
-                    no Spotify,</a> gravado aos 18, publicado por completo aos 22.)</p>
-            <p>Tenho um amor enorme por <b>storytelling</b>, seja através de livros, músicas, RPGs, ou jogos. É minha
-                maior paixão, e busco uma oportunidade profissional de expandir esse talento.</p>
-
-        </section>
-        <section class="section" id="proj">
-            <h2>Projetos e Participações</h2>
-        </section>
-        <section class="section columns" id="proj">
-            <div class="column">
-                <img src="images/arconomicon.png" alt="Image 3">
-                <h3>Arconomicon</h3>
-                <p>Jogo de tabuleiro feito em <a href="https://arthurschwambach.github.io/MeuPortfolio/">equipe</a> para
-                    a matéria de Design de Games. Após a entrega do trabalho, o
-                    jogo voltou a <b>fase de desenvolvimento como TCC.</b> Fui responsável pelo design das cartas e
-                    guias, além
-                    de auxiliar nas mecânicas internas. Hoje, estamos elevando o nível de estratégia e aprimorando a
-                    experiência de imersão dos jogadores através de <b>conexão</b> e <b>storytelling</b>. Arconomicon
-                    atualmente é
-                    jogado por diversas pessoas, e buscamos lançá-lo oficialmente pós TCC.</p>
-            </div>
-            <div class="column">
-                <img src="images/palestra1.jpg" alt="Image 2">
-                <h3>Palestra sobre mulheres na TI</h3>
-                <p>Durante um evento de TI organizado pela Atlética Tubarões, fui convidada a fazer uma palestra sobre a
-                    <b>representatividade da mulher na TI,</b> onde tive a oportunidade de trazer a tona um assunto
-                    muito
-                    importante pra mim, além de apresentar nomes femininos extremamente relevantes na história da
-                    computação (e alguns nomes modernos que ainda representam!).
-                </p>
-            </div>
-            <div class="column">
-                <img src="images/futuras cientistas - foto oficial.jpg" alt="Image 1">
-                <h3>Futuras Cientistas</h3>
-                <p>Junto com a Liga Feminina de TI, fiz parte da criação de um projeto educacional de programação básica
-                    para alunas do ensino médio de escolas públicas, dentro do <b>Programa Futuras Cientistas da
-                        CETENE</b>,
-                    onde também fui <b>mentora</b> e guiei as alunas durante a criação e estilização de um site
-                    pessoal.</p>
-            </div>
-        </section>
-
-        <section class="section" id="skills">
-            <h2>Habilidades e Características</h2>
-            <ul>
-                <li>Inglês fluente, nível C2</li>
-                <li>HTML, CSS e JavaScript</li>
-                <li>C# e .NET</li>
-                <li>MySQL</li>
-                <li>Comunicação assertiva</li>
-                <li>Trabalho em equipe</li>
-                <li>Proatividade</li>
-                <li>Narrativa e storytelling</li>
-                <li>Facilidade de adaptação e aprendizagem</li>
-                <li>Organização e atenção a detalhes</li>
-                <li>Vontade de aprender</li>
-                <li>Interesse em:
-                    <ul>
-                        <li>Unity</li>
-                        <li>.NET Framework</li>
-                        <li>SQL</li>
-                        <li>Web Design</li>
-                        <li>Web Development</li>
-                        <li>Cybersecurity</li>
-                </li>
-            </ul>
-            </li>
-            </ul>
-        </section>
-
-        <section class="section" id="exp">
-            <h2>Experiências</h2>
-            <h3>Introdução à Programação Web para Futuras Cientistas</h3>
-            <p>A Liga Feminina de TI teve a oportunidade de participar do Programa Futuras Cientistas da CETENE, onde
-                precisamos preparar um curso para alunas do ensino médio de escolas públicas. Eu sugeri o tema de
-                Front-End, sabendo que era a escolha perfeita para encantar as meninas. Neste projeto, fui instrutora e,
-                levando em consideração a opinião das alunas sobre o que queriam aprender, desenvolvi um <a
-                    href="https://ligafemininadetiuvv.github.io/futurasCientistasAulas/">site básico de exemplo</a>
-                (utilizando um tema escolhido por elas) para ensiná-las. Aprendemos como montar uma estrutura HTML
-                estática, CSS e Design.</p>
-            <hr>
-            <h3>Diretoria de Design & Marketing, Liga Feminina de TI da UVV</h3>
-            <p>Criei a identidade visual da Liga, auxiliando no estabelecimento de uma marca sólida e reconhecível e
-                trazendo atenção para nosso objetivo (representar as mulheres na TI e incentivar a entrada de mais
-                mulheres na área). Fui responsável pelo design, artes, presença nas redes sociais e eventos
-                pessoalmente, como por exemplo uma palestra durante um evento.</p>
-            <hr>
-            <h3>Líder de Turma, UVV</h3>
-            <p>Ocupo o cargo de liderança da turma desde o 1º período. Neste cargo, sou responsável por facilitar a
-                comunicação entre alunos e professores/coordenação. Em várias ocasiões, fui peça chave na resolução de
-                problemas que prejudicariam os alunos gravemente. Fiz uso da comunicação assertiva nesses momentos, e em
-                todas as situações, chegamos a um acordo justo em que todos os lados se beneficiavam e ninguém se
-                prejudicava. Além disso, estive presente em diversas reuniões diretas com os reitores da universidade,
-                onde tive a oportunidade de fazer sugestões de melhorias que foram implementadas.</p>
-            </p>
-            <hr>
-            <h3>Trainee Operacional, Vale (Complexo Tubarão)</h3>
-            <p>Trabalhei como trainee operacional nas usinas de pelotização da Vale, Complexo Tubarão, durante um ano.
-            </p>
-        </section>
-
-        <section class="section" id="contact">
-            <h2>Contato</h2>
-            <p>Se o meu portfólio e perfil te interessam, me envie uma mensagem e vamos conversar :)</p>
-
-            <section class="section" id="socialMedia">
-                <a href="https://www.linkedin.com/in/elissaborges/" class="btn">LinkedIn</a>
-                <a href="https://www.github.com/redroselilith/" class="btn">GitHub</a>
-                <a href="https://www.instagram.com/redroselilith/" class="btn">Instagram</a>
+            <section class="section" id="about">
+                <h2>Sobre Mim</h2>
+                <p>Desde criança, sempre fui muito curiosa e sempre gostei de aprender coisas novas. De idiomas à
+                    programação, eu queria aprender tudo. Sou autodidata, aprendi <b>inglês</b> sozinha, <i>sem ter
+                        feito
+                        nenhum
+                        curso,</i> e estudei cinco outras línguas: coreano, espanhol, francês, italiano e holandês. Me
+                    apaixonei
+                    pelo coreano e deixei os outros de lado para focar no que eu mais gostei, mas espero chegar a
+                    fluência
+                    em todos um dia.</p>
+                <p>Entre os dez e os doze anos, aprendi a mexer no <b>Photoshop</b> e me apaixonei por design. Durante a
+                    adolescência, trabalhei como <b>designer freelancer,</b> além de projetos voluntários em comunidades
+                    na
+                    internet.</p>
+                <p>Aos doze, descobri o <b>HTML</b> e <b>CSS</b>, e foi amor a primeira vista. Foi no momento em que eu
+                    escrevi minha primeira linha de código e vi uma tela se formar que eu decidi que queria me
+                    aprofundar na
+                    área de programação.</p>
+                <p>Ao longo dos anos, meus objetivos foram mudando. Dos meus primeiros sonhos de ser cantora e atriz, a
+                    escritora, a
+                    hacker <i>(obrigada, Felicity Smoak)</i>, a desenvolvedora Front-End, e a <b>desenvolvedora de
+                        games</b>. Agora
+                    tenho sonhos grandes de criar minha própria empresa de <b>jogos de simulação</b> algum dia, e hoje
+                    busco
+                    construir uma fundação sólida para o início da minha carreira, para que um dia eu possa realizar o
+                    meu
+                    sonho.</p>
+                <p>Como disse antes, eu faria de tudo se pudesse (e eu tento, rs). No meu <strike>raro</strike> tempo
+                    livre,
+                    gosto de jogar,
+                    mas também escrevo livros (dos quais um único foi <a
+                        href="https://www.amazon.com.br/Ha%C3%ADresis-Portuguese-Lissa-Brunelli-ebook/dp/B07JWBH1BH">publicado.</a>
+                    Não é o melhor, mas tenho orgulho da conquista de publicar um livro aos 16 anos) ou
+                    músicas (também
+                    tenho um <a
+                        href="https://open.spotify.com/album/7qjUiK97LaKJoUIY7wnVjG?si=gJc24l_yTmKdAmYQ_7pQcw">EP
+                        no Spotify,</a> gravado aos 18, publicado por completo aos 22.)</p>
+                <p>Tenho um amor enorme por <b>storytelling</b>, seja através de livros, músicas, RPGs, ou jogos. É
+                    minha
+                    maior paixão, e busco uma oportunidade profissional de expandir esse talento.</p>
 
             </section>
-        </section>
+            <section class="section" id="proj">
+                <h2>Projetos e Participações</h2>
+            </section>
+            <section class="columns" id="proj">
+                <div class="column">
+                    <img src="images/arconomicon.png" alt="Image 3">
+                    <h3>Arconomicon</h3>
+                    <p>Jogo de tabuleiro feito em <a href="https://arthurschwambach.github.io/MeuPortfolio/">equipe</a>
+                        para
+                        a matéria de Design de Games. Após a entrega do trabalho, o
+                        jogo voltou a <b>fase de desenvolvimento como TCC.</b> Fui responsável pelo design das cartas e
+                        guias, além
+                        de auxiliar nas mecânicas internas. Hoje, estamos elevando o nível de estratégia e aprimorando a
+                        experiência de imersão dos jogadores através de <b>conexão</b> e <b>storytelling</b>.
+                        Arconomicon
+                        atualmente é
+                        jogado por diversas pessoas, e buscamos lançá-lo oficialmente pós TCC.</p>
+                </div>
+                <div class="column">
+                    <img src="images/palestra1.jpg" alt="Image 2">
+                    <h3>Palestra sobre mulheres na TI</h3>
+                    <p>Durante um evento de TI organizado pela Atlética Tubarões, fui convidada a fazer uma palestra
+                        sobre a
+                        <b>representatividade da mulher na TI,</b> onde tive a oportunidade de trazer a tona um assunto
+                        muito
+                        importante pra mim, além de apresentar nomes femininos extremamente relevantes na história da
+                        computação (e alguns nomes modernos que ainda representam!).
+                    </p>
+                </div>
+
+                <div class="column">
+                    <a href="#futurasCientistas">
+                        <img src="images/futuras cientistas - foto oficial.jpg" alt="Image 1">
+                    </a>
+                    <h3>Futuras Cientistas</h3>
+                    <p>Junto com a Liga Feminina de TI, fiz parte da criação de um projeto educacional de programação
+                        básica
+                        para alunas do ensino médio de escolas públicas, dentro do <b>Programa Futuras Cientistas da
+                            CETENE</b>,
+                        onde também fui <b>mentora</b> e guiei as alunas durante a criação e estilização de um site
+                        pessoal.</p>
+                </div>
+            </section>
+
+            <section class="section" id="skills">
+                <h2>Habilidades e Características</h2>
+                <ul>
+                    <li>Inglês fluente, nível C2</li>
+                    <li>HTML, CSS e JavaScript</li>
+                    <li>C# e .NET</li>
+                    <li>MySQL</li>
+                    <li>Comunicação assertiva</li>
+                    <li>Trabalho em equipe</li>
+                    <li>Proatividade</li>
+                    <li>Narrativa e storytelling</li>
+                    <li>Facilidade de adaptação e aprendizagem</li>
+                    <li>Organização e atenção a detalhes</li>
+                    <li>Vontade de aprender</li>
+                    <li>Interesse em:
+                        <ul>
+                            <li>Unity</li>
+                            <li>.NET Framework</li>
+                            <li>SQL</li>
+                            <li>Web Design</li>
+                            <li>Web Development</li>
+                            <li>Cybersecurity</li>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </section>
+
+            <section class="section" id="exp">
+                <h2>Experiências</h2>
+                <h3 id="futurasCientistas">Introdução à Programação Web para Futuras Cientistas</h3>
+                <p>A Liga Feminina de TI teve a oportunidade de participar do Programa Futuras Cientistas da CETENE,
+                    onde
+                    precisamos preparar um curso para alunas do ensino médio de escolas públicas. Eu sugeri o tema de
+                    Front-End, sabendo que era a escolha perfeita para encantar as meninas. Neste projeto, fui
+                    instrutora e,
+                    levando em consideração a opinião das alunas sobre o que queriam aprender, desenvolvi um <a
+                        href="https://ligafemininadetiuvv.github.io/futurasCientistasAulas/">site básico de exemplo</a>
+                    (utilizando um tema escolhido por elas) para ensiná-las. Aprendemos como montar uma estrutura HTML
+                    estática, CSS e Design.</p>
+                <hr>
+                <h3>Diretoria de Design & Marketing, Liga Feminina de TI da UVV</h3>
+                <p>Criei a identidade visual da Liga, auxiliando no estabelecimento de uma marca sólida e reconhecível e
+                    trazendo atenção para nosso objetivo (representar as mulheres na TI e incentivar a entrada de mais
+                    mulheres na área). Fui responsável pelo design, artes, presença nas redes sociais e eventos
+                    pessoalmente, como por exemplo uma palestra durante um evento.</p>
+                <hr>
+                <h3>Líder de Turma, UVV</h3>
+                <p>Ocupo o cargo de liderança da turma desde o 1º período. Neste cargo, sou responsável por facilitar a
+                    comunicação entre alunos e professores/coordenação. Em várias ocasiões, fui peça chave na resolução
+                    de
+                    problemas que prejudicariam os alunos gravemente. Fiz uso da comunicação assertiva nesses momentos,
+                    e em
+                    todas as situações, chegamos a um acordo justo em que todos os lados se beneficiavam e ninguém se
+                    prejudicava. Além disso, estive presente em diversas reuniões diretas com os reitores da
+                    universidade,
+                    onde tive a oportunidade de fazer sugestões de melhorias que foram implementadas.</p>
+                </p>
+                <hr>
+                <h3>Trainee Operacional, Vale (Complexo Tubarão)</h3>
+                <p>Trabalhei como trainee operacional nas usinas de pelotização da Vale, Complexo Tubarão, durante um
+                    ano.
+                </p>
+            </section>
+
+            <section class="section" id="contact">
+                <h2>Contato</h2>
+                <p>Se o meu portfólio e perfil te interessam, me envie uma mensagem e vamos conversar :)</p>
+
+                <section class="section" id="socialMedia">
+                    <a href="https://www.linkedin.com/in/elissaborges/" class="btn">LinkedIn</a>
+                    <a href="https://www.github.com/redroselilith/" class="btn">GitHub</a>
+                    <a href="https://www.instagram.com/redroselilith/" class="btn">Instagram</a>
+
+                </section>
+            </section>
+
+            <footer>
+                © Copyright 2025 Lily Borges.
+            </footer>
+
+        </div>
     </div>
 
     <script src="script.js"></script>
