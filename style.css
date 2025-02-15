@@ -85,9 +85,7 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
-    /* Horizontal on desktop */
     align-items: center;
-    /* Vertically align items */
 }
 
 .nav-links.left,
@@ -105,7 +103,6 @@ header {
 
 .nav-links li {
     margin: 0 10px;
-    /* Adjust spacing between links */
 }
 
 
@@ -243,8 +240,7 @@ footer {
     }
 
     .container {
-        width: 90%;
-        padding: 10px;
+        width: 95%;
     }
 
     * {
@@ -259,13 +255,6 @@ footer {
 
     .me {
         justify-content: center;
-    }
-
-
-    .intro {
-        background-image: url(images/introBGImgSMALLEST.png);
-        background-size: cover;
-        height: 15vh;
     }
 
     #introMe {
