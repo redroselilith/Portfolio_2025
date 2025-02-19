@@ -9,12 +9,12 @@ body {
 
 ::-moz-selection {
     color: black;
-    background-color: #ffb1ce;
+    background-color: #fcd7e5;
 }
 
 ::selection {
     color: black;
-    background-color: #ffb1ce;
+    background-color: #fcd7e5;
 }
 
 .container {
